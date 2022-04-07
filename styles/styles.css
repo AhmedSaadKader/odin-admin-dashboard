@@ -80,17 +80,17 @@ header input {
     padding: 0.5rem;
 }
 
-header .user-wrapper {
+.user-wrapper {
     display: flex;
     align-items: center;
     justify-self: end;
 }
 
-header .user-wrapper * {
+.user-wrapper * {
     margin: 0.5rem;
 }
 
-header .user-wrapper img {
+.user-wrapper img {
     border-radius: 30px;
 }
 
@@ -190,7 +190,7 @@ main h3 {
 .trending-card {
     margin: 0px 3rem;
     background-color: white;
-    height: 300px;
+    height: 180px;
     width: 380px;
     padding-left: 20px;
     padding-right: 20px;
