@@ -3,6 +3,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -55,6 +56,7 @@ body {
 header {
     grid-column: 2/3;
     background-color: white;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 1.75);
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -73,12 +75,15 @@ header form button {
 
 header input {
     border-radius: 20px;
-    width: 60%;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.5);
+    padding: 0.5rem;
 }
 
 header .user-wrapper {
     display: flex;
     align-items: center;
+    justify-self: end;
 }
 
 header .user-wrapper * {
@@ -93,10 +98,44 @@ header .user-wrapper i {
     margin-right: 2rem;
 }
 
-/* header  */
+header .user-greeting {
+    display: flex;
+    /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1); */
+}
+
+header .user-greeting img {
+    border-radius: 30px;
+    margin-left: 1rem;
+}
+
+header .user-greeting p {
+    margin-left: 1rem;
+}
+
+header .user-greeting span {
+    display: inline-block;
+    margin-top: 0.25rem;
+    font-size: 1.25rem;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 0 0.75rem;
+}
+
+.header-buttons button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    border: none;
+    background-color: blue;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.5);
+    color: white;
+}
 
 main {
     grid-column: 2;
     grid-row: 2;
-    background-color: lightgray;
+    background-color: rgb(239, 238, 245);
 }
